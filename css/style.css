@@ -9,7 +9,7 @@
 
 .bg {
     background-image: linear-gradient(45deg, black, green);
-    color:aquamarine;
+    color: aquamarine;
 }
 
 /* globais */
@@ -39,7 +39,7 @@ h1 {
     background-color: rgba(32, 61, 29, 0.507);
     border-radius: 15px;
     padding: 15px;
-    
+
 }
 
 .resultado {
@@ -52,6 +52,9 @@ h1 {
     padding-right: 5px;
     justify-content: right;
     align-items: flex-end;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .botao {
@@ -76,5 +79,33 @@ h1 {
 }
 
 .zero {
-    width:  106px;
+    width: 106px;
+}
+
+
+@media (max-width: 800px) {
+    .container-calculadora {
+        display: block
+    }
+
+    .resultado {
+        width: 300px;
+        height: 50px;
+        padding-right: 8px;
+        font-size: 35px;
+    }
+
+    .botao {
+        width: 65px;
+        height: 65px;
+        font-size: 35px;
+    }
+
+    .igual {
+        height: 140px;
+    }
+
+    .zero {
+        width: 140px;
+    }
 }
