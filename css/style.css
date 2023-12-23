@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 .bg {
@@ -12,6 +13,11 @@
 }
 
 /* globais */
+
+h1 {
+    font-size: 20px;
+    text-align: center;
+}
 
 .chamada {
     text-align: center;
@@ -26,8 +32,49 @@
 }
 
 .calculadora {
+    display: flex;
+    flex-direction: column;
+    max-width: min-content;
     margin: auto;
     background-color: rgba(32, 61, 29, 0.507);
     border-radius: 15px;
     padding: 15px;
+    
+}
+
+.resultado {
+    display: flex;
+    background-color: rgb(60, 71, 60);
+    width: 217px;
+    height: 40px;
+    margin: 5px;
+    font-size: 25px;
+    padding-right: 5px;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+.botao {
+    margin: 3px;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: rgb(30, 31, 30);
+    border: none;
+    color: green;
+    border-radius: 5px;
+}
+
+
+.botao:hover {
+    background-color: rgb(15, 15, 15);
+}
+
+.igual {
+    height: 106px;
+}
+
+.zero {
+    width:  106px;
 }
